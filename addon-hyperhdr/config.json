@@ -1,6 +1,6 @@
 {
   "name": "HyperHDR",
-  "version": "19.0.0.0",
+  "version": "21.0.0.0",
   "slug": "hyperhdr",
   "description": "HyperHDR is an open source ambient lighting implementation for television sets based on the video and audio streams analysis. Includes real-time HDR tone mapping and multi-threading for better performance especially for USB grabbers.",
   "url": "htpps://www.hyperhdr.eu/",
