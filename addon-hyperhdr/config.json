@@ -31,7 +31,7 @@
   "map": [
     "config:rw"
   ],
-  "image": "jonah1024/hyperhdr-addon-{arch}",
+  "image": "nocturno/hyper-hdr:{BUILD_VERSION}",
   "options": {},
   "schema": {},
   "privileged": [
