@@ -1,8 +1,7 @@
 {
   "build_from": {
-    "amd64": "homeassistant/amd64-base-debian",
-    "armhf": "homeassistant/armhf-base-raspbian",
-    "aarch64": "homeassistant/aarch64-base-debian"
+    "amd64": "nocturno/hyper-hdr:21.0.0.0",
+    "aarch64": "nocturno/hyper-hdr:arm64-21.0.0.0"
   },
   "squash": false,
   "args": {
