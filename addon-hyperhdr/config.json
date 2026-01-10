@@ -4,7 +4,7 @@
   "slug": "hyperhdr",
   "description": "HyperHDR is an open source ambient lighting implementation for television sets based on the video and audio streams analysis. Includes real-time HDR tone mapping and multi-threading for better performance especially for USB grabbers.",
   "url": "htpps://www.hyperhdr.eu/",
-  "arch": ["amd64"],
+  "arch": ["amd64", "aarch64"],
   "startup": "application",
   "apparmor": false,
   "boot": "auto",
@@ -27,7 +27,7 @@
   "map": [
     "config:rw"
   ],
-  "image": "nocturno/hyper-hdr:21.0.0.0",
+  "image": "ghcr.io/jessica12ryan/hyperhdr-addon-{arch}",
   "options": {},
   "schema": {},
   "privileged": [
