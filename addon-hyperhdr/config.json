@@ -10,7 +10,7 @@
   "boot": "auto",
   "ports": {
     "8090/tcp": 8090,
-    "8092/tcp": null,
+    "8092/tcp": 8092,
     "19333/tcp": 19333,
     "19400/tcp": 19400,
     "19444/tcp": 19444,
@@ -30,10 +30,7 @@
   "image": "ghcr.io/jessica12ryan/hyperhdr-addon-{arch}",
   "options": {},
   "schema": {},
-  "privileged": [
-    "SYS_ADMIN",
-    "SYS_RAWIO"
-  ],
+  "privileged": true
   "uart": true,
   "usb": true,
   "video": true,
