@@ -32,8 +32,12 @@ jobs:
       # Build and push multi-arch images
       - name: Build and push HyperHDR add-on images
         run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+
+          echo "Building version: $VERSION"
+
           docker buildx build \
             --platform linux/amd64,linux/arm64 \
-            -t ghcr.io/jessica12ryan/hyperhdr-addon:${GITHUB_REF#refs/tags/} \
+            -t ghcr.io/jessica12ryan/hyperhdr-addon:$VERSION \
             --push \
             ./addon-hyperhdr
