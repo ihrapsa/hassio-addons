@@ -1,7 +1,8 @@
 name: 'Addon-HyperHDR'
 
 # Controls when the action will run
-on: [ workflow_dispatch ]
+on: 
+  workflow_dispatc:
   push:
     tags:
       - "v*.*.*.*"
