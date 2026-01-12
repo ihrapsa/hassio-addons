@@ -1,5 +1,9 @@
 #!/usr/bin/with-contenv bash
+set -e
+
+mkdir -p /config/hyperhdr
+
 exec /usr/bin/hyperhdr \
   --userdata /config/hyperhdr \
   --webPort 8090 \
-  --logLevel info
+  --logLevel INFO
