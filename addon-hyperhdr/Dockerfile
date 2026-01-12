@@ -1,13 +1,16 @@
-ARG BUILD_FROM
-FROM ${BUILD_FROM}
+ARG BUILD_FROM_amd64
+ARG BUILD_FROM_arm64
+ARG TARGETPLATFORM
+
+FROM ${BUILD_FROM_${TARGETPLATFORM##*/}}
 
 ENV LANG C.UTF-8
 
-RUN apk add --no-cache \
-    libusb \
-    ffmpeg
+# install runtime deps here
+# RUN apk add --no-cache ...
 
 COPY rootfs /
+
 
 #ARG DOWNLOAD_URL
 #ARG BUILD_VERSION
