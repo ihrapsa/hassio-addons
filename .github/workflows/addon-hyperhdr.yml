@@ -37,13 +37,20 @@ jobs:
             echo "Not a tag build, exiting."
             exit 0
           fi
-
+      
           VERSION="${GITHUB_REF_NAME#v}"
           echo "Building HyperHDR version $VERSION"
-
+      
           docker buildx build \
             --platform linux/amd64,linux/arm64 \
-            -t ghcr.io/jessica12ryan/hyperhdr-addon:$VERSION \
+            --build-arg BUILD_FROM=ghcr.io/home-assistant/amd64-base:3.19 \
+            -t ghcr.io/jessica12ryan/hyperhdr-addon-amd64:$VERSION \
             --push \
             ./addon-hyperhdr
-
+      
+          docker buildx build \
+            --platform linux/arm64 \
+            --build-arg BUILD_FROM=ghcr.io/home-assistant/aarch64-base:3.19 \
+            -t ghcr.io/jessica12ryan/hyperhdr-addon-aarch64:$VERSION \
+            --push \
+            ./addon-hyperhdr
