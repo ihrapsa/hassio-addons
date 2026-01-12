@@ -30,10 +30,7 @@
   "image": "ghcr.io/jessica12ryan/hyperhdr-addon-{arch}",
   "options": {},
   "schema": {},
-  "privileged": [
-    "SYS_ADMIN",
-    "SYS_RAWIO"
-  ],
+  "privileged": true,
   "uart": true,
   "usb": true,
   "video": true,
