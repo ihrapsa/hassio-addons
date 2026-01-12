@@ -1,6 +1,14 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
+ENV LANG C.UTF-8
+
+RUN apk add --no-cache \
+    libusb \
+    ffmpeg
+
+COPY rootfs /
+
 #ARG DOWNLOAD_URL
 #ARG BUILD_VERSION
 #ARG BUILD_ARCH
