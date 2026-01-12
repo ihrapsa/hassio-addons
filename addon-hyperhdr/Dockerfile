@@ -3,12 +3,10 @@ FROM ${BUILD_FROM}
 
 ENV LANG C.UTF-8
 
-# Install required packages
 RUN apk add --no-cache \
     libusb \
     ffmpeg
 
-# Copy the service definition
 COPY rootfs /
 
 #ARG DOWNLOAD_URL
