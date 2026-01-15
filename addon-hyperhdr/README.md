@@ -5,3 +5,7 @@
 
 Install and start the add-on.
 You can open HyperHDR by going to http://HA_IP:8090
+
+### More Info
+
+For more information, check the included addon documentation.
