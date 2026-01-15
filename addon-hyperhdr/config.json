@@ -16,7 +16,7 @@
 
   "privileged": ["SYS_ADMIN"],
 
-  "udev": true
+  "udev": true,
 
   "devices": [
     "/dev/video*",
