@@ -18,6 +18,7 @@ See [here](https://www.home-assistant.io/hassio/installing_third_party_addons/) 
 - [awawa-dev](https://github.com/awawa-dev/HyperHDR) for HyperHDR  
 - [bradsjm](https://github.com/bradsjm/hassio-addons) for hassio-addon template  
 - [appleimperio](https://github.com/appleimperio/docker-hyperhdr) for HyperHDR dockerfile
+- [jessica12ryan](https://github.com/jessica12ryan) for HyperHDR updates
 
 [repository-badge]: https://img.shields.io/badge/Add%20repository%20to%20my-Home%20Assistant-41BDF5?logo=home-assistant&style=for-the-badge
 [repository-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fihrapsa%2Fhassio-addons.git
