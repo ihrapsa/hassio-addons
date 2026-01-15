@@ -1,3 +1,9 @@
+### Jan 15, 2026
+
+- Readded support for ARM64
+- Fixed some bugs
+- Cleaned up
+
 ### Jan 9, 2026
 
 - Fix Docker image
