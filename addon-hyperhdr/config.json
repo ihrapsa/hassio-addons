@@ -16,8 +16,13 @@
 
   "privileged": ["SYS_ADMIN"],
 
+  "udev": true
+
   "devices": [
-    "/dev/video0"
+    "/dev/video*",
+    "/dev/ttyUSB*",
+    "/dev/ttyACM*",
+    "/dev/bus/usb"
   ],
 
   "map": [
@@ -25,10 +30,12 @@
   ],
 
   "options": {
-    "TZ": "UTC"
+    "port": 8090
   },
 
   "schema": {
-    "TZ": "str"
-  }
+    "port": "int(1,65535)"
+  },
+
+  "webui": "http://[HOST]:[PORT]"
 }
