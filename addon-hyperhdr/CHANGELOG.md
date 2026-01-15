@@ -1,3 +1,11 @@
+### Upcoming Release...
+
+- Removed timezone input from configuration (use system timezone)
+- Added support for more USB devices and video grabbers
+- Added more information to README/DOCS
+- Added the ability to specify custom port (BETA)
+- Added "Open Web UI" button to addon page
+
 ### Jan 15, 2026
 
 - Readded support for ARM64
