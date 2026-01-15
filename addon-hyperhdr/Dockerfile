@@ -15,10 +15,4 @@ RUN mkdir -p /config
 COPY hyperhdr /usr/bin/hyperhdr
 RUN chmod +x /usr/bin/hyperhdr
 
-# Startup script to read HA options
-COPY run.sh /run.sh
-RUN chmod +x /run.sh
-
 EXPOSE 8090
-
-CMD ["/run.sh"]
