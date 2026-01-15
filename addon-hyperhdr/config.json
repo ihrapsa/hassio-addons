@@ -1,50 +1,34 @@
 {
   "name": "HyperHDR",
-  "version": "21.0.0.0",
-  "slug": "hyperhdr",
-  "description": "HyperHDR is an open source ambient lighting implementation for television sets based on the video and audio streams analysis. Includes real-time HDR tone mapping and multi-threading for better performance especially for USB grabbers.",
-  "url": "htpps://www.hyperhdr.eu/",
+  "slug": "addon-hyperhdr",
+  "version": "latest",
+  "description": "HyperHDR Ambient Lighting",
+  "url": "https://github.com/awawa-dev/HyperHDR",
+
+  "image": "ghcr.io/jessica12ryan/{arch}-hyperhdr",
+
   "arch": ["amd64", "aarch64"],
-  "startup": "application",
-  "apparmor": false,
+
+  "startup": "services",
   "boot": "auto",
-  "ports": {
-    "8090/tcp": 8090,
-    "8092/tcp": null,
-    "19333/tcp": 19333,
-    "19400/tcp": 19400,
-    "19444/tcp": 19444,
-    "19445/tcp": 19445
-  },
-  "ports_description": {
-    "8090/tcp": "Web Admin",
-    "8092/tcp": "SSL Web Admin",
-    "19333/tcp": "Boblight Server",
-    "19400/tcp": "Google Flatbuffers Receiver",
-    "19444/tcp": "JSON-RPC Remote Control",
-    "19445/tcp": "Protocol Buffers Server"
-  },
+  "host_network": true,
+  "init": false,
+
+  "privileged": ["SYS_ADMIN"],
+
+  "devices": [
+    "/dev/video0"
+  ],
+
   "map": [
     "config:rw"
   ],
-  "image": "ghcr.io/jessica12ryan/hyperhdr-addon-{arch}",
-  "options": {},
-  "schema": {},
-  "privileged": [
-    "SYS_ADMIN",
-    "SYS_RAWIO"
-  ],
-  "uart": true,
-  "usb": true,
-  "video": true,
-  "gpio": true,
-  "devices": [
-    "/dev/spidev0.0",
-    "/dev/vchiq",
-    "/dev/amvideo",
-    "/dev/fb0",
-    "/dev/mem"
-  ],
-  "webui": "http://[HOST]:[PORT:8090]",
-  "init": false
+
+  "options": {
+    "TZ": "UTC"
+  },
+
+  "schema": {
+    "TZ": "str"
+  }
 }
