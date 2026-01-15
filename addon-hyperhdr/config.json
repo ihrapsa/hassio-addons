@@ -37,5 +37,5 @@
     "port": "int(1,65535)"
   },
 
-  "webui": "http://[HOST]:[PORT]"
+  "webui": "http://[HOST]:[PORT:8090]"
 }
