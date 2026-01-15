@@ -3,8 +3,8 @@
 - Removed timezone input from configuration (use system timezone)
 - Added support for more USB devices and video grabbers
 - Added more information to README/DOCS
-- Added the ability to specify custom port (BETA)
 - Added "Open Web UI" button to addon page
+- Added the ability to specify custom port (BETA)
 
 ### Jan 15, 2026
 
