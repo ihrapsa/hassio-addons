@@ -4,12 +4,10 @@
 
 &#10003; ![image](https://api.iconify.design/mdi/file-search.svg) [HyperHDR](addon-hyperhdr/) : HyperHDR is an open source and light weight Ambient Lighting Implementation
 
-&emsp;&emsp;![Version](https://img.shields.io/badge/dynamic/yaml?label=Version&query=%24.upstream_version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fihrapsa%2Fhassio-addons%2Fmaster%2Faddon-hyperhdr%2Fupdater.json)
-![Update](https://img.shields.io/badge/dynamic/json?label=Updated&query=%24.last_update&url=https%3A%2F%2Fraw.githubusercontent.com%2Fihrapsa%2Fhassio-addons%2Fmaster%2Faddon-hyperhdr%2Fupdater.json)
+  Project Website: https://github.com/awawa-dev/HyperHDR
+
 ![aarch64][aarch64-badge]
 ![amd64][amd64-badge]
-  
-  Project homesite: https://github.com/awawa-dev/HyperHDR
 
 ***
 
