@@ -4,7 +4,8 @@
 - Added support for more USB devices and video grabbers
 - Added more information to README/DOCS
 - Added "Open Web UI" button to addon page
-- Added the ability to specify custom port (BETA)
+- Added the ability to specify custom port
+- Increased security rating of add-on in Home Assistant (4)
 
 ### Jan 15, 2026
 
