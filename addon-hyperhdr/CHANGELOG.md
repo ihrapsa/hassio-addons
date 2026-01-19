@@ -2,6 +2,7 @@
 ### HyperHDR Version 21.0.0.0
 
 - Internal updates for Github Actions
+- Added Descriptions to port settings on Configuration tab
 
 ## Version 2026.1 - Jan 19, 2026
 ### HyperHDR Version 21.0.0.0
