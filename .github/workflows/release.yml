@@ -1,0 +1,42 @@
+name: Create GitHub Release
+
+on:
+  push:
+    paths:
+      - 'addon-hyperhdr/config.json'
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Read versions from config.json
+        id: get_versions
+        run: |
+          ADDON_VERSION=$(jq -r '.version' addon-hyperhdr/config.json)
+          HYPERHDR_VERSION=$(jq -r '.hyperhdr_version' addon-hyperhdr/config.json)
+
+          if [ -z "$ADDON_VERSION" ] || [ -z "$HYPERHDR_VERSION" ]; then
+            echo "❌ version fields are empty"
+            exit 1
+          fi
+
+          echo "addon_version=$ADDON_VERSION" >> $GITHUB_OUTPUT
+          echo "hyperhdr_version=$HYPERHDR_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.get_versions.outputs.addon_version }}
+          name: "${{ steps.get_versions.outputs.addon_version }} (${{ steps.get_versions.outputs.hyperhdr_version }})"
+          body: "Automated release for version ${{ steps.get_versions.outputs.addon_version }} (HyperHDR ${{ steps.get_versions.outputs.hyperhdr_version }})"
+          draft: true
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
