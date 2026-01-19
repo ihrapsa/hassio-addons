@@ -3,8 +3,8 @@ on:
     branches:
       - main
     paths:
-      - "config.json"
-      - "Dockerfile"
+      - "addon-hyperhdr/config.json"
+      - "addon-hyperhdr/Dockerfile"
       - ".github/workflows/build.yml"
   workflow_dispatch:
 
