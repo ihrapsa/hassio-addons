@@ -10,7 +10,7 @@
   "arch": ["amd64", "aarch64"],
 
   "startup": "services",
-  "apparmor": false,
+  "host_network": true,
   "boot": "auto",
   "init": false,
 
