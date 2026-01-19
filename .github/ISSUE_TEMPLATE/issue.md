@@ -2,8 +2,7 @@
 -->
 
 ## Version of HyperHDR addon
-<!-- If you are not using the newest version, download and try that before opening an issue
-If you are unsure about the version check the const.py file.
+<!-- If you are not using the newest version, try updating before submitting your issue. Let us know the earliest and latest versions that your issue presented itself
 -->
 ```text
 
