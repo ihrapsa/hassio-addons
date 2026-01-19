@@ -10,9 +10,17 @@
   "arch": ["amd64", "aarch64"],
 
   "startup": "services",
-  "host_network": true,
   "boot": "auto",
   "init": false,
+
+  "ports": {
+    "8090/tcp": 8090,
+    "8092/tcp": 8092,
+    "19333/tcp": 19333,
+    "19400/tcp": 19400,
+    "19444/tcp": 19444,
+    "19445/tcp": 19445
+  },
 
   "privileged": [
     "SYS_ADMIN",
