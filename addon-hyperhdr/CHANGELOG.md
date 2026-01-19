@@ -11,21 +11,25 @@
 - Updated Documentation
 
 ## Jan 15, 2026
+### HyperHDR Version 21.0.0.0
 
 - Readded support for ARM64
 - Fixed some bugs
 - Cleaned up
 
 ## Jan 9, 2026
+### HyperHDR Version 21.0.0.0
 
 - Fix Docker image
 - Temporarily Removed support for ARMhf & ARM64
 - Temporarily only supports AMD64
 
 ## Jan 8, 2026
+### HyperHDR Version 21.0.0.0
 
 - Fix Docker image reference (preventing install/update)
 
 ## Jan 7, 2026
+### HyperHDR Version 21.0.0.0
 
 - Update to 21.0.0.0
