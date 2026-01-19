@@ -10,18 +10,29 @@
   "arch": ["amd64", "aarch64"],
 
   "startup": "services",
+  "apparmor": false,
   "boot": "auto",
-  "host_network": true,
   "init": false,
 
-  "privileged": ["SYS_ADMIN"],
+  "privileged": [
+    "SYS_ADMIN",
+    "SYS_RAWIO"
+  ],
 
   "udev": true,
-
+  "uart": true,
+  "usb": true,
+  "video": true,
+  "gpio": true,
+  
   "devices": [
     "/dev/video0",
     "/dev/video1",
-    "/dev/fb0"
+    "/dev/fb0",
+    "/dev/spidev0.0",
+    "/dev/vchiq",
+    "/dev/amvideo",
+    "/dev/mem"
   ],
 
   "map": [
