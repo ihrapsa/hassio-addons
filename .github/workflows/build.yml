@@ -48,4 +48,5 @@ jobs:
           build-args: |
             BUILD_ARCH=${{ matrix.arch }}
           tags: |
+            ghcr.io/jessica12ryan/hyperhdr-${{ matrix.arch }}:${{ steps.version.outputs.version }}
             ghcr.io/jessica12ryan/hyperhdr-${{ matrix.arch }}:latest
