@@ -1,0 +1,5 @@
+{
+    "hacs": "1.34.1",
+    "name": "HyperHDR",
+    "homeassistant": "2024.1.6"
+}
