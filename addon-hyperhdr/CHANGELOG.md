@@ -1,18 +1,14 @@
-## Version 2026.2b - TDB
+## Version 2026.1 - Jan 19, 2026
 ### HyperHDR Version 21.0.0.0
 
 - Internal updates for Github actions
 - Added template for issue reporting
-- Added descriptions to port settings on configuration tab
-
-## Version 2026.1 - Jan 19, 2026
-### HyperHDR Version 21.0.0.0
-
 - Removed timezone input from configuration (use system timezone)
 - Added support for more USB devices and video grabbers
 - Added more information to README/DOCS
 - Added "Open Web UI" button to addon page
 - Added the ability to specify custom port
+- Added descriptions to port settings on configuration tab
 - Increased security rating of add-on in Home Assistant (4)
 - Added seperate version number for addon to track updates
 - Updated Documentation
