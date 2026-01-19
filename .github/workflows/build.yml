@@ -1,0 +1,49 @@
+name: Build & Publish HyperHDR Addon
+
+on:
+  push:
+    paths:
+      - "config.json"
+      - "Dockerfile"
+      - ".github/workflows/build.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        arch: [amd64, aarch64]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Read addon version
+        id: version
+        run: |
+          VERSION=$(jq -r '.version' config.json)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build & Push image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          platforms: linux/${{ matrix.arch }}
+          push: true
+          tags: |
+            ghcr.io/jessica12ryan/${{ matrix.arch }}-hyperhdr:${{ steps.version.outputs.version }}
+            ghcr.io/jessica12ryan/${{ matrix.arch }}-hyperhdr:latest
