@@ -19,10 +19,9 @@
   "udev": true,
 
   "devices": [
-    "/dev/video*",
-    "/dev/ttyUSB*",
-    "/dev/ttyACM*",
-    "/dev/bus/usb"
+    "/dev/video0",
+    "/dev/video1",
+    "/dev/fb0"
   ],
 
   "map": [
