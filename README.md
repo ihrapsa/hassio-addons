@@ -1,6 +1,6 @@
-# Home Assistant Addons
+# Jonah's Home Assistant Add-Ons
 
-## addon-hyperhdr
+## HyperHDR Addon (addon-hyperhdr)
 
 &#10003; ![image](https://api.iconify.design/mdi/file-search.svg) [HyperHDR](addon-hyperhdr/) : HyperHDR is an open source and light weight Ambient Lighting Implementation
 
