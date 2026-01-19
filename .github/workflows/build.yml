@@ -1,7 +1,5 @@
 on:
   push:
-    branches:
-      - main
     paths:
       - "addon-hyperhdr/config.json"
       - "addon-hyperhdr/Dockerfile"
