@@ -2,11 +2,11 @@ name: Build & Publish HyperHDR Addon
 
 on:
   push:
-    branches: [ "main" ]
     paths:
       - "addon-hyperhdr/config.json"
       - "addon-hyperhdr/Dockerfile"
       - ".github/workflows/build.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
