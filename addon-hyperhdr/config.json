@@ -15,7 +15,7 @@
 
   "ports": {
     "8090/tcp": 8090,
-    "8092/tcp": 8092,
+    "8092/tcp": null,
     "19333/tcp": 19333,
     "19400/tcp": 19400,
     "19444/tcp": 19444,
@@ -47,13 +47,9 @@
     "config:rw"
   ],
 
-  "options": {
-    "port": 8090
-  },
+  "options": {},
 
-  "schema": {
-    "port": "int(1,65535)"
-  },
+  "schema": {},
 
   "webui": "http://[HOST]:[PORT:8090]"
 }
