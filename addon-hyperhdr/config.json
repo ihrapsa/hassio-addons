@@ -23,6 +23,15 @@
     "19445/tcp": 19445
   },
 
+  "ports_description": {
+    "8090/tcp": "Web Admin",
+    "8092/tcp": "SSL Web Admin",
+    "19333/tcp": "Boblight Server",
+    "19400/tcp": "Google Flatbuffers Receiver",
+    "19444/tcp": "JSON-RPC Remote Control",
+    "19445/tcp": "Protocol Buffers Server"
+  },
+  
   "privileged": [
     "SYS_ADMIN",
     "SYS_RAWIO"
