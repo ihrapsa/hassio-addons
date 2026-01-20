@@ -1,8 +1,3 @@
-## Version 2026.2b - TDB
-### HyperHDR Version 21.0.0.0
-
-- Intial Beta
-
 ## Version 2026.1 - Jan 19, 2026
 ### HyperHDR Version 21.0.0.0
 
