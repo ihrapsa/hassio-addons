@@ -37,6 +37,12 @@
     "SYS_RAWIO"
   ],
 
+  "ingress": true,
+  "ingress_port": 8090,
+  "ingress_entry": "/",
+  "panel_icon": "mdi:lightbulb-on",
+  "panel_title": "HyperHDR",
+  
   "udev": true,
   "uart": true,
   "usb": true,
