@@ -36,7 +36,7 @@ jobs:
           tag_name: ${{ steps.get_versions.outputs.addon_version }}
           name: "${{ steps.get_versions.outputs.addon_version }} (${{ steps.get_versions.outputs.hyperhdr_version }})"
           body: "Automated release for version ${{ steps.get_versions.outputs.addon_version }} (HyperHDR ${{ steps.get_versions.outputs.hyperhdr_version }})"
-          draft: true
+          draft: false
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
