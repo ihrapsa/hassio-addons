@@ -9,7 +9,8 @@
 - Added "Open Web UI" button to addon page
 - Added the ability to specify custom port
 - Added descriptions to port settings on configuration tab
-- Increased security rating of add-on in Home Assistant (4)
+- Added HA Ingress capabilities
+- Increased security rating of add-on in Home Assistant (6)
 - Added seperate version number for addon to track updates
 - Updated Documentation
 
