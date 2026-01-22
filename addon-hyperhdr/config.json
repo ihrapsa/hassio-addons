@@ -1,34 +1,71 @@
 {
   "name": "HyperHDR",
   "slug": "addon-hyperhdr",
-  "version": "latest",
+  "version": "2026.1",
+  "hyperhdr_version": "21.0.0.0",
   "description": "HyperHDR Ambient Lighting",
   "url": "https://github.com/awawa-dev/HyperHDR",
 
-  "image": "ghcr.io/jessica12ryan/{arch}-hyperhdr",
+  "image": "ghcr.io/jessica12ryan/hyperhdr-{arch}",
 
   "arch": ["amd64", "aarch64"],
 
   "startup": "services",
   "boot": "auto",
-  "host_network": true,
   "init": false,
 
-  "privileged": ["SYS_ADMIN"],
+  "ports": {
+    "8090/tcp": 8090,
+    "8092/tcp": null,
+    "19333/tcp": 19333,
+    "19400/tcp": 19400,
+    "19444/tcp": 19444,
+    "19445/tcp": 19445
+  },
 
+  "ports_description": {
+    "8090/tcp": "Web Admin",
+    "8092/tcp": "SSL Web Admin",
+    "19333/tcp": "Boblight Server",
+    "19400/tcp": "Google Flatbuffers Receiver",
+    "19444/tcp": "JSON-RPC Remote Control",
+    "19445/tcp": "Protocol Buffers Server"
+  },
+  
+  "privileged": [
+    "SYS_ADMIN",
+    "SYS_RAWIO"
+  ],
+
+  "ingress": true,
+  "ingress_port": 8090,
+  "ingress_entry": "/",
+  "panel_icon": "mdi:lightbulb-on",
+  "panel_title": "HyperHDR",
+  
+  "udev": true,
+  "uart": true,
+  "usb": true,
+  "video": true,
+  "gpio": true,
+  
   "devices": [
-    "/dev/video0"
+    "/dev/video0",
+    "/dev/video1",
+    "/dev/fb0",
+    "/dev/spidev0.0",
+    "/dev/vchiq",
+    "/dev/amvideo",
+    "/dev/mem"
   ],
 
   "map": [
     "config:rw"
   ],
 
-  "options": {
-    "TZ": "UTC"
-  },
+  "options": {},
 
-  "schema": {
-    "TZ": "str"
-  }
+  "schema": {},
+
+  "webui": "http://[HOST]:[PORT:8090]"
 }
