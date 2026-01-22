@@ -1,4 +1,6 @@
-## Version 2026.1 - Jan 19, 2026
+# Changelog
+
+## 2026.1
 ### HyperHDR Version 21.0.0.0
 
 - Internal updates for Github actions
@@ -34,6 +36,5 @@
 - Fix Docker image reference (preventing install/update)
 
 ## Jan 7, 2026
-### HyperHDR Version 21.0.0.0
 
-- Update to 21.0.0.0
+- Update to HyperHDR Version 21.0.0.0
