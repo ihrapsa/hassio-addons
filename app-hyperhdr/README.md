@@ -1,6 +1,6 @@
 # HyperHDR Home Assistant App
 
-[![HyperHDR logo](https://raw.githubusercontent.com/ihrapsa/hassio-addons/master/addon-hyperhdr/logo.png)](https://www.hyperhdr.eu/)
+[![HyperHDR logo](https://raw.githubusercontent.com/ihrapsa/hassio-addons/master/app-hyperhdr/logo.png)](https://www.hyperhdr.eu/)
 
 
 Install and start the app.
