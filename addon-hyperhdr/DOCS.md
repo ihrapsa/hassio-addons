@@ -1,18 +1,18 @@
-# HyperHDR Home Assistant Add-On
+# HyperHDR Home Assistant App
 
 [![HyperHDR logo](https://raw.githubusercontent.com/ihrapsa/hassio-addons/master/addon-hyperhdr/logo.png)](https://www.hyperhdr.eu/)
 
 ## Repository Instructions:
 [![Add repository to Home Assistant][repository-badge]][repository-url]
 
-Or simply add this github repo `https://github.com/ihrapsa/hassio-addons.git` as a third-party add-on repository in Home Assistant **Add-on Store**.
+Or simply add this github repo `https://github.com/ihrapsa/hassio-addons.git` as a third-party app repository in Home Assistant **App Store**.
 
 ## Installation:
-Install and start the add-on.
-You can open HyperHDR by going to http://HA_IP:8090
+Install and start the app.
+You can open HyperHDR by going to http://HA_IP:8090 or by clicking "Open Web UI".
 
 ## Configuration:
-HyperHDR addon allows you to customize the ports that are exposed.
+HyperHDR app allows you to customize the ports that are exposed.
 By default, port 8092 (SSL) is disabled. You can enable this by toggling "Show Disabled Ports", then specify a port number, and click save. You will need to restart the addon for the changes to take effect.
 
 ## Troubleshooting:
