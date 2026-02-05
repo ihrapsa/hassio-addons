@@ -1,7 +1,7 @@
 {
   "name": "HyperHDR",
   "slug": "addon-hyperhdr",
-  "version": "2026.1",
+  "version": "2026.2b",
   "hyperhdr_version": "21.0.0.0",
   "description": "HyperHDR Ambient Lighting",
   "url": "https://github.com/awawa-dev/HyperHDR",
@@ -36,12 +36,6 @@
     "SYS_ADMIN",
     "SYS_RAWIO"
   ],
-
-  "ingress": true,
-  "ingress_port": 8090,
-  "ingress_entry": "/",
-  "panel_icon": "mdi:lightbulb-on",
-  "panel_title": "HyperHDR",
   
   "udev": true,
   "uart": true,
@@ -62,10 +56,6 @@
   "map": [
     "config:rw"
   ],
-
-  "options": {},
-
-  "schema": {},
 
   "webui": "http://[HOST]:[PORT:8090]"
 }
