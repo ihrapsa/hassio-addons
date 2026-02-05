@@ -3,7 +3,9 @@
 ## 2026.2B
 ### HyperHDR Version 21.0.0.0
 
-- Starting beta for new addon version
+- Starting beta for new app version
+- Removed Ingress support due to incompatibility
+- Fixed Open Web UI button
 
 ## 2026.1
 ### HyperHDR Version 21.0.0.0

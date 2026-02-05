@@ -3,7 +3,7 @@ name: Create GitHub Release
 on:
   push:
     paths:
-      - 'addon-hyperhdr/config.json'
+      - 'app-hyperhdr/config.json'
 
 permissions:
   contents: write
@@ -19,8 +19,8 @@ jobs:
       - name: Read versions from config.json
         id: get_versions
         run: |
-          ADDON_VERSION=$(jq -r '.version' addon-hyperhdr/config.json)
-          HYPERHDR_VERSION=$(jq -r '.hyperhdr_version' addon-hyperhdr/config.json)
+          ADDON_VERSION=$(jq -r '.version' app-hyperhdr/config.json)
+          HYPERHDR_VERSION=$(jq -r '.hyperhdr_version' app-hyperhdr/config.json)
 
           if [ -z "$ADDON_VERSION" ] || [ -z "$HYPERHDR_VERSION" ]; then
             echo "❌ version fields are empty"

@@ -1,8 +1,8 @@
 # Jonah's Home Assistant Apps
 
-## HyperHDR App (addon-hyperhdr)
+## HyperHDR App (app-hyperhdr)
 
-&#10003; ![image](https://api.iconify.design/mdi/file-search.svg) [HyperHDR](addon-hyperhdr/) : HyperHDR is an open source and light weight Ambient Lighting Implementation
+&#10003; ![image](https://api.iconify.design/mdi/file-search.svg) [HyperHDR](app-hyperhdr/) : HyperHDR is an open source and light weight Ambient Lighting Implementation
 
   Project Website: https://github.com/awawa-dev/HyperHDR
 
