@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.2B
+### HyperHDR Version 21.0.0.0
+
+- Starting beta for new addon version
+
 ## 2026.1
 ### HyperHDR Version 21.0.0.0
 
