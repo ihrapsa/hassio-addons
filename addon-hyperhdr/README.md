@@ -4,7 +4,7 @@
 
 
 Install and start the app.
-You can open HyperHDR by going to http://HA_IP:8090 or by clicking Open Web UI.
+You can open HyperHDR by going to http://HA_IP:8090 or by clicking "Open Web UI".
 
 ### More Info
 
