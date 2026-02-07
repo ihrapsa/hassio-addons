@@ -8,6 +8,7 @@
 
 ![aarch64][aarch64-badge]
 ![amd64][amd64-badge]
+![armv7][armv7no-badge]
 
 ***
 
@@ -27,5 +28,6 @@ See [here](https://www.home-assistant.io/hassio/installing_third_party_addons/) 
 
 [aarch64-badge]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-badge]: https://img.shields.io/badge/amd64-yes-green.svg
+[armv7no-badge]: https://img.shields.io/badge/armv7-no-red.svg
 [repository-badge]: https://img.shields.io/badge/Add%20repository%20to%20my-Home%20Assistant-41BDF5?logo=home-assistant&style=for-the-badge
 [repository-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fihrapsa%2Fhassio-addons.git
