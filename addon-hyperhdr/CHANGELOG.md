@@ -1,4 +1,7 @@
 # Changelog
+## 2026.2
+### HyperHDR Version fix-for-v22beta1-2026-01-29
+- bumped up the version to the newest
 
 ## 2026.1
 ### HyperHDR Version 21.0.0.0
