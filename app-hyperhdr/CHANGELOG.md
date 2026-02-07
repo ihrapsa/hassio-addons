@@ -1,11 +1,12 @@
 # Changelog
 
 ## 2026.3
-### HyperHDR Version 22.0.0beta1
+### HyperHDR Version 21.0.0.0
 
 - Renamed addon to app for Home Assistant 2026.2
 - Removed Ingress support due to incompatibility
 - Fixed Open Web UI button
+- Reverted to latest stable version of HyperHDR (Beta version available soon)
 
 ## 2026.2
 ### HyperHDR Version 22.0.0beta1
