@@ -6,7 +6,7 @@
   "description": "HyperHDR Ambient Lighting",
   "url": "https://github.com/awawa-dev/HyperHDR",
 
-  "image": "ghcr.io/jessica12ryan/hyperhdr-{arch}",
+  "image": "ghcr.io/ihrapsa/hyperhdr-{arch}",
 
   "arch": ["amd64", "aarch64"],
 
