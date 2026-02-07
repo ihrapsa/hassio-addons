@@ -2,7 +2,7 @@
   "name": "HyperHDR",
   "slug": "app-hyperhdr",
   "version": "2026.3",
-  "hyperhdr_version": "22.0.0.0beta1",
+  "hyperhdr_version": "v22.0.0.0beta1",
   "description": "HyperHDR Ambient Lighting",
   "url": "https://github.com/awawa-dev/HyperHDR",
 
