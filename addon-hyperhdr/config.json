@@ -8,7 +8,7 @@
 
   "image": "ghcr.io/leoschmi/hyperhdr-{arch}",
 
-  "arch": ["amd64", "aarch64"],
+  "arch": ["amd64"],
 
   "startup": "services",
   "boot": "auto",
