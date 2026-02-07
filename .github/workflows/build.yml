@@ -45,7 +45,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.HYPERHDR_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build & Push images
         uses: docker/build-push-action@v5
@@ -54,5 +54,5 @@ jobs:
           platforms: linux/${{ matrix.arch }}
           push: true
           tags: |
-            ghcr.io/jessica12ryan/hyperhdr-${{ matrix.arch }}:${{ steps.version.outputs.version }}
-            ghcr.io/jessica12ryan/hyperhdr-${{ matrix.arch }}:latest
+            ghcr.io/leoschmi/hyperhdr-${{ matrix.arch }}:${{ steps.version.outputs.version }}
+            ghcr.io/leoschmi/hyperhdr-${{ matrix.arch }}:latest
