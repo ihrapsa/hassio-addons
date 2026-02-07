@@ -5,6 +5,7 @@
 
 - Changed config image to match main repo
 - Updated Changelog
+- Change ".github/workflows/release.yml" to "prerelease: false" before pushing
 
 ## 2026.3
 ### HyperHDR Version 21.0.0.0
