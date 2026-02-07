@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.4
+### HyperHDR Version 21.0.0.0 (as of now)
+
+- Changed config image to match main repo
+- Updated Changelog
+
 ## 2026.3
 ### HyperHDR Version 21.0.0.0
 
