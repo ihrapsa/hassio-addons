@@ -1,7 +1,7 @@
 {
   "name": "HyperHDR",
   "slug": "addon-hyperhdr",
-  "version": "2026.3",
+  "version": "2026.4",
   "hyperhdr_version": "fix-for-v22beta1-2026-01-29",
   "description": "HyperHDR Ambient Lighting",
   "url": "https://github.com/awawa-dev/HyperHDR",
