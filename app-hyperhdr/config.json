@@ -2,11 +2,11 @@
   "name": "HyperHDR",
   "slug": "app-hyperhdr",
   "version": "2026.2",
-  "hyperhdr_version": "21.0.0.0",
+  "hyperhdr_version": "fix-for-v22beta1-2026-01-29",
   "description": "HyperHDR Ambient Lighting",
   "url": "https://github.com/awawa-dev/HyperHDR",
 
-  "image": "ghcr.io/ihrapsa/hyperhdr-{arch}",
+  "image": "ghcr.io/jessica12ryan/hyperhdr-{arch}",
 
   "arch": ["amd64", "aarch64"],
 
