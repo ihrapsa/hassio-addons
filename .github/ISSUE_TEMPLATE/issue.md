@@ -1,12 +1,12 @@
 <!-- Before you open a new issue, search through the existing issues to see if others have had the same problem.
 -->
 
-## Version of HyperHDR addon
+## Version of HyperHDR app
 <!-- If you are not using the newest version, try updating before submitting your issue. Let us know the earliest and latest versions that your issue presented itself
 -->
 ```text
 
-Replace with addon version number
+Replace with app version number
 
 ```
 
