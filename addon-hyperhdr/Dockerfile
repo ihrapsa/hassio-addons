@@ -1,2 +1,2 @@
 ARG BUILD_ARCH
-FROM nocturno/hyper-hdr
+FROM gpregger/hyper-hdr
