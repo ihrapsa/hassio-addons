@@ -8,7 +8,7 @@
 
   "image": "ghcr.io/ihrapsa/hyperhdr-{arch}",
 
-  "arch": ["amd64", "aarch64"],
+  "arch": ["amd64", "aarch64", "armhf"],
 
   "startup": "services",
   "boot": "auto",
