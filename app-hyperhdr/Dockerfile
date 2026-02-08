@@ -1,2 +1,3 @@
 ARG BUILD_ARCH
-FROM nocturno/hyper-hdr:21.0.0.0
+ARG HYPERHDR_VERSION
+FROM nocturno/hyper-hdr:${HYPERHDR_VERSION}
