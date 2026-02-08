@@ -1,6 +1,6 @@
 # General
 .DS_Store
-.DS_Store?
+.DS_Store[]
 __MACOSX/
 .AppleDouble
 .LSOverride
@@ -8,7 +8,6 @@ Icon[]
 
 # Thumbnails
 ._*
-Icon?
 ehthumbs.db
 Thumbs.db
 
