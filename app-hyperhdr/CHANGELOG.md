@@ -6,6 +6,7 @@
 - Changed config image to match main repo
 - Fixed internal versioning to prevent specifying in multiple files
 - Add contribution docs (CONTRIBUTING.md)
+- Updated license docs (GNU & MIT)
 - Updated changelog (CHANGELOG.md)
 - Change ".github/workflows/release.yml" to "prerelease: false" before pushing
 
