@@ -34,6 +34,16 @@ jobs:
           fi
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
+      - name: Read HyperHDR version
+        id: hyperhdr
+        run: |
+          HYPERHDR=$(jq -r '.hyperhdr_version // ""' app-hyperhdr/config.json)
+          if [ -z "$HYPERHDR" ]; then
+            echo "❌ hyperhdr_version empty in config.json"
+            exit 1
+          fi
+          echo "hyperhdr_version=$HYPERHDR" >> $GITHUB_OUTPUT
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
