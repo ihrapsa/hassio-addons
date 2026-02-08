@@ -1,10 +1,12 @@
 # Changelog
 
 ## 2026.4
-### HyperHDR Version 21.0.0.0 (as of now)
+### HyperHDR Version 21.0.0.0
 
 - Changed config image to match main repo
-- Updated Changelog
+- Fixed internal versioning to prevent specifying in multiple files
+- Add contribution docs (CONTRIBUTING.md)
+- Updated changelog (CHANGELOG.md)
 - Change ".github/workflows/release.yml" to "prerelease: false" before pushing
 
 ## 2026.3
