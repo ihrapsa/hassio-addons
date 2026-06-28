@@ -8,9 +8,6 @@
 - Add contribution docs (CONTRIBUTING.md)
 - Updated license docs (GNU & MIT)
 - Updated changelog (CHANGELOG.md)
-  
-- Change ".github/workflows/release.yml" to "prerelease: false" before pushing
-- Change image in config and build file before pushing
 
 ## 2026.3
 ### HyperHDR Version 21.0.0.0
