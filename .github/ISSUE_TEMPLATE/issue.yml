@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a problem with HyperHDR
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before you open a new issue, search existing issues to see if others had the same problem.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version of HyperHDR app
+      description: If not newest version, try updating first
+      placeholder: Replace with app version number
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Issue
+      placeholder: Replace with description of issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: Replace with steps to reproduce the issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log or any other helpful information
+      placeholder: Replace with log

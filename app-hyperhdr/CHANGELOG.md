@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026.4
+### HyperHDR Version 21.0.0.0
+
+- Changed config image to match main repo
+- Fixed internal versioning to prevent specifying in multiple files
+- Add contribution docs (CONTRIBUTING.md)
+- Updated license docs (GNU & MIT)
+- Updated changelog (CHANGELOG.md)
+
 ## 2026.3
 ### HyperHDR Version 21.0.0.0
 
