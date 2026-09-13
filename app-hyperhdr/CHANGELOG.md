@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026.5
+### HyperHDR Version 22.0.0.0
+
+- Updated HyperHDR to 22.0.0.0 (Infinite Color Engine, Qt 6.8+, C++20, performance improvements)
+- Changed Docker base image from nocturno/hyper-hdr to thomy90/hyperhdr to support HyperHDR 22.0.0.0 (nocturno no longer provides 22.0.0.0 tags; thomy90 provides multi-arch amd64/aarch64 with versioned tags)
+- Preserved config persistence via `hyperhdr -u=/config` to maintain Home Assistant `map: config:rw` compatibility (FHS migration in v22 otherwise defaults to ~/.config/HyperHDR)
+- Exposed all HyperHDR ports (8090,8092,19333,19400,19444,19445) explicitly in Dockerfile
+- Update release.yml to enhance release information
+- Create SECURITY.md
+- Update LICENSE.md
+
+---
+
 ## 2026.4
 ### HyperHDR Version 21.0.0.0
 
@@ -9,6 +22,8 @@
 - Updated license docs (GNU & MIT)
 - Updated changelog (CHANGELOG.md)
 
+---
+
 ## 2026.3
 ### HyperHDR Version 21.0.0.0
 
@@ -17,12 +32,16 @@
 - Fixed Open Web UI button
 - Reverted to latest stable version of HyperHDR (Beta version will available soon)
 
+---
+
 ## 2026.2
 ### HyperHDR Version 22.0.0beta1
 
 - Pull request approved to update HyperHDR version
 - Was accidentally submitted by author, unverified, and approved
 - We do not officially support version HyperHDR 2026.2 - use at own risk (or update)
+
+---
 
 ## 2026.1
 ### HyperHDR Version 21.0.0.0
@@ -40,25 +59,4 @@
 - Added seperate version number for addon to track updates
 - Updated Documentation
 
-## Jan 15, 2026
-### HyperHDR Version 21.0.0.0
-
-- Readded support for ARM64
-- Fixed some bugs
-- Cleaned up
-
-## Jan 9, 2026
-### HyperHDR Version 21.0.0.0
-
-- Fix Docker image
-- Temporarily Removed support for ARMhf & ARM64
-- Temporarily only supports AMD64
-
-## Jan 8, 2026
-### HyperHDR Version 21.0.0.0
-
-- Fix Docker image reference (preventing install/update)
-
-## Jan 7, 2026
-
-- Update to HyperHDR Version 21.0.0.0
+---

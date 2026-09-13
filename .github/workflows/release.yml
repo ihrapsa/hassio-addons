@@ -30,12 +30,29 @@ jobs:
           echo "addon_version=$ADDON_VERSION" >> $GITHUB_OUTPUT
           echo "hyperhdr_version=$HYPERHDR_VERSION" >> $GITHUB_OUTPUT
 
+      - name: Read latest CHANGELOG entry
+        id: changelog
+        run: |
+          # Extract everything between the first '## [' header and the first '---' separator
+          NOTES=$(awk '/^---$/{exit} /^## \[/{found=1} found{print}' app-hyperhdr/CHANGELOG.md)
+          echo "notes<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$NOTES" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.get_versions.outputs.addon_version }}
           name: "${{ steps.get_versions.outputs.addon_version }} (${{ steps.get_versions.outputs.hyperhdr_version }})"
-          body: "Automated release for version ${{ steps.get_versions.outputs.addon_version }} (HyperHDR ${{ steps.get_versions.outputs.hyperhdr_version }})"
+          body: |
+            ## HyperHDR App for Home Assistant
+
+            Automated release for version ${{ steps.get_versions.outputs.addon_version }} (HyperHDR ${{ steps.get_versions.outputs.hyperhdr_version }})
+
+            ### Changes
+            ${{ steps.changelog.outputs.notes }}
+
+            For the full log of changes, see [CHANGELOG.md](app-hyperhdr/CHANGELOG.md).
           draft: true
           prerelease: false
         env:

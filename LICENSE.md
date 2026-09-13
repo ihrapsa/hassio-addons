@@ -19,3 +19,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Third-Party Components
+
+This Home Assistant app installs and wraps the upstream HyperHDR software. 
+HyperHDR is owned and maintained by @awawa-dev and is licensed under the MIT License.
+You can view the HyperHDR MIT License file [here](https://github.com/awawa-dev/HyperHDR/blob/master/LICENSE).
+
+HyperHDR also bundles other packages with individual licensing.
+You can view the additional third party license file [here](https://github.com/awawa-dev/HyperHDR/blob/master/3RD_PARTY_LICENSES).
